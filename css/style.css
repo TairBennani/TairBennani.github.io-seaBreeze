@@ -1,3 +1,32 @@
-h2 {
-  color: green;
+body{
+    margin: auto;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+header {
+    border: 3px solid green;
+    height:200px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#sidebarL {
+    border: 3px solid orange;
+    height:400px;
+    width: 100px;
+    float: left;
+}
+#sidebarR {
+    border: 3px solid purple;
+    height:400px;
+    width: 100px;
+    float: right;
+}
+#content {
+    border: 3px solid blue;
+    padding: 10px 10px;
+}
+footer {
+    border: 3px solid red;
+    height:200px;
 }
