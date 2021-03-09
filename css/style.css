@@ -7,14 +7,26 @@
     text-align: center;
     font-family: Georgia, serif;
 
+
 }
 
 header {
     height:200px;
     background-color: #f8ac18;
     margin-bottom: 12px;
-
+    position: relative;
 }
+#reminder {
+    height: 50px;
+    width: 200px;
+    outline: 1px solid blue;
+    background-color: purple;
+    position: absolute;
+    bottom: -10px;
+    left:300px;
+}
+
+
 #sidebarL {
 
     background-color: #ebebeb;
@@ -44,4 +56,15 @@ footer {
 
 .clear {
     clear:both;
+}
+#telephone {
+    outline: 1px solid blue;
+    width: 10px;
+    height: 200px;
+    position: fixed;
+    top:150px;
+    left: 2px;
+}
+#telephone a {
+    text-decoration:none; 
 }
