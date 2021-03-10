@@ -1,26 +1,34 @@
+body {
+    background-image: url(../images/tropic.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
 #wrapper{
     width: 800px;
-    outline:2px solid red;
-    padding: 10px;
-    margin: 0 auto;
-
+    background-color:black;
+    padding:10px;
+    margin: 30px auto;
     text-align: center;
     font-family: Georgia, serif;
-
+    background: rgba(0, 0, 0, 0.3);
 
 }
 
 header {
     height:200px;
-    background-color: #f8ac18;
     margin-bottom: 12px;
     position: relative;
+    padding: 1px;
+    background: rgba(248,172,24, 0.8);
+
+
 }
 #reminder {
     height: 50px;
     width: 200px;
-    outline: 1px solid blue;
-    background-color: purple;
+    background-color: #A0C0D9;
     position: absolute;
     bottom: -10px;
     left:300px;
@@ -28,30 +36,29 @@ header {
 
 
 #sidebarL {
-
-    background-color: #ebebeb;
     width: 150px;
     margin-bottom: 12px;
     float: left;
+    background: rgba(235,235,235, 0.8);
 }
 #sidebarR {
-
-    background-color: #ebebeb;
     width: 150px;
     margin-bottom: 12px;
     float: right;
+    background: rgba(235,235,235, 0.8);
 }
 
 #content {
-
-    background-color: #c5161d;
     margin: 0 160px 12px 160px;
     width: 480px;
+    color: white;
+    background: rgba(197,22,29, 0.8);
 }
 
 footer {
     background-color: #f8ac18;
     margin-bottom: 12px;
+    background: rgba(248,172,24, 0.6);
 }
 
 .clear {
@@ -66,5 +73,5 @@ footer {
     left: 2px;
 }
 #telephone a {
-    text-decoration:none; 
+    text-decoration:none;
 }
