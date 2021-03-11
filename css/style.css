@@ -21,9 +21,7 @@ header {
     margin-bottom: 12px;
     position: relative;
     padding: 1px;
-    background: rgba(248,172,24, 0.8);
-
-
+    background: rgba(248,172,24, 0.8)
 }
 #reminder {
     height: 50px;
@@ -49,7 +47,7 @@ header {
 }
 
 #content {
-    margin: 0 160px 12px 160px;
+    margin: auto  ;
     width: 480px;
     color: white;
     background: rgba(197,22,29, 0.8);
