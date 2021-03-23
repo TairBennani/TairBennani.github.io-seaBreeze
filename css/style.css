@@ -1,10 +1,17 @@
 * {
     padding: 0;
     margin: 0;
+    font: 18px Verdana;
 }
 body {
     background-image: url(../images/tropic.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
+}
+
+header {
+    height: minmax(100px, auto);
+    width: 100%;
+    background-color: rgba(178,149,119, 0.5);
 }
