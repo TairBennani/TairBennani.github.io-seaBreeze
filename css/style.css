@@ -84,3 +84,17 @@ body {
             padding: 10px;
             font: 14px Georgia;
         }
+
+        @media (max-width: 965px) {
+            #wrapper {
+                border: 1px solid red;
+                display: grid;
+                grid-template-columns: 4fr 2fr;
+                grid-gap: 20px;
+                grid-template-areas:
+                    "header header"
+                    "article article"
+                    "aside aside"
+                    "footer footer";
+            }
+        }
