@@ -31,15 +31,20 @@ body {
             border-bottom: 2px solid #006B99;
         }
             header ul li {
-                padding-left: 40px;
+                padding-left: 50px;
+                padding-top: 15px;
             }
                 a {
                     text-decoration: none;
                     color:rgba(2,183,189);
-                    padding: 12px 30px;
+                    padding-left: 15px;
                 }
                 a:hover {
                     text-decoration: underline;
+                }
+                .chosen {
+                    color: #E1F7E6;
+
                 }
         article {
             grid-area: article;
@@ -50,9 +55,14 @@ body {
                 border:1px solid green;
                 padding: 10px;
             }
+            .responsive  {
+                width: 100%;
+                height: auto;
+            }
         aside {
             grid-area: aside;
-            border: 1px solid black;
+            border: 2px solid #024D73;
+            border-radius: 5px;
             background: rgba(225,247,230, 0.5);
         }
             aside div {
