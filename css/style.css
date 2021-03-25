@@ -97,4 +97,7 @@ body {
                     "aside aside"
                     "footer footer";
             }
+            header ul li {
+                padding:15px;
+            }
         }
