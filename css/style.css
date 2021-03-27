@@ -61,6 +61,13 @@ body {
                 width: 100%;
                 height: auto;
             }
+            article video {
+
+                border: 2px solid #024D73;
+                border-radius: 5px;
+                margin-left: 20px;
+            }
+
         aside {
             grid-area: aside;
             border: 2px solid #024D73;
