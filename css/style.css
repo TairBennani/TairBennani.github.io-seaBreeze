@@ -111,4 +111,7 @@ body {
             header ul li {
                 padding:15px;
             }
+            article {
+                grid-template-columns: 1fr;
+            }
         }
