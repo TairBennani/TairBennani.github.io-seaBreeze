@@ -61,19 +61,26 @@ body {
                 width: 100%;
                 height: auto;
             }
-            article video {
-
+            .responsive_2 {
+                width: 100%;
+                height: auto;
+            }
+            article video, iframe {
+                /* display: inline-block;
                 border: 2px solid #024D73;
                 border-radius: 5px;
-                margin-left: 20px;
+
+                margin-top: 15px;
+                margin-left: 20px; */
             }
+
 
         aside {
             grid-area: aside;
             border: 2px solid #024D73;
             border-radius: 5px;
             background: rgba(2,77,115, 0.5);
-            width: 100%;
+            /* width: 100%; */  /* закрывает рамку справа при вкл width */
 
         }
             aside ul{
