@@ -32,11 +32,13 @@ body {
         }
             header ul li {
                 padding-left: 50px;
-                padding-top: 15px;
+                padding-top: 10px;
             }
                 header ul li a {
+                    display: inline-block;
                     text-decoration: none;
-                    color:rgba(2,183,189);
+                    color:rgba(2,183,189);                        
+                    padding-top: 10px;
                     padding-left: 15px;
                 }
                 a:hover {
