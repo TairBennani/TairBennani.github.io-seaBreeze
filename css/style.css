@@ -14,7 +14,7 @@ body {
     #wrapper {
         border: 1px solid red;
         display: grid;
-        grid-template-columns: 4fr 2fr;
+        grid-template-columns: 5fr 2fr;
         grid-gap: 20px;
         grid-template-areas:
             "header header"
@@ -34,7 +34,7 @@ body {
                 padding-left: 50px;
                 padding-top: 15px;
             }
-                a {
+                header ul li a {
                     text-decoration: none;
                     color:rgba(2,183,189);
                     padding-left: 15px;
@@ -63,8 +63,19 @@ body {
             grid-area: aside;
             border: 2px solid #024D73;
             border-radius: 5px;
-            background: rgba(225,247,230, 0.5);
+            background: rgba(2,77,115, 0.5);
+            width: 100%;
+
         }
+            aside ul li a {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color:#A8E6DA;
+                padding: 11px;
+            }
+
+
             aside div {
 
 
