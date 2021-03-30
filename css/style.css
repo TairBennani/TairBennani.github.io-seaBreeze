@@ -43,7 +43,7 @@ body {
             }
     #wrapper {
         border: 1px solid red;
-        position: relative;
+        position: relative; /* никак визуально не сказывается, скорее поставил как по урокам */
         min-height: 100vh;
         /* margin-top: 150px; */
         display: grid;
