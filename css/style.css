@@ -8,7 +8,7 @@ body {
     background-image: url(../images/tropic.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
-    background-size: cover;
+    /* background-size: cover; */
     font: 22px Verdana;
 }
     header {
@@ -47,9 +47,9 @@ body {
         margin-top: 120px;
         display: grid;
         grid-template-columns: 5fr 2fr;
-        grid-template-rows: 1fr auto;
+        grid-template-rows: auto 1fr auto;
         grid-gap: 20px;
-        grid-template-areas:
+        /* grid-template-areas: */
             "article aside"
             "footer footer";
     }
@@ -84,6 +84,7 @@ body {
             border: 2px solid #024D73;
             border-radius: 5px;
             background: rgba(2,77,115, 0.5);
+
             /* width: 100%; */  /* закрывает рамку справа при вкл width */
 
         }
