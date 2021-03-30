@@ -2,9 +2,6 @@
     padding: 0;
     margin: 0;
 }
-html {
-
-}
 body {
 
 
@@ -16,8 +13,8 @@ body {
 }
     #wrapper {
         border: 1px solid red;
-        min-height: 100vh; */
-        /* position: relative;
+        /* position: relative; */
+
         display: grid;
         grid-template-columns: 5fr 2fr;
         grid-gap: 20px;
@@ -105,10 +102,10 @@ body {
 
         footer {
             grid-area: footer;
-            position: absolute;
+            /* position: absolute; */
 
-            /* display: flex;
-            align-items: flex-end; */
+            display: flex;
+            align-items: flex-end;
             justify-content: center;
 
             background-color: rgba(168,230,218, 0.7);
