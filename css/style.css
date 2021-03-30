@@ -14,9 +14,10 @@ body {
     #wrapper {
         border: 1px solid red;
         /* position: relative; */
-
+        min-height: 100vh;
         display: grid;
         grid-template-columns: 5fr 2fr;
+        grid-template-rows: auto 1fr auto;
         grid-gap: 20px;
         grid-template-areas:
             "header header"
@@ -109,7 +110,7 @@ body {
             justify-content: center;
 
             background-color: rgba(168,230,218, 0.7);
-            display: grid;
+            /* display: grid; */
             height: 100px;
             padding: 10px;
             font: 14px Georgia;
