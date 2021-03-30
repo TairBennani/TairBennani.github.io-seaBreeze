@@ -11,46 +11,50 @@ body {
     background-size: cover;
     font: 22px Verdana;
 }
+    header {
+        position: fixed;
+        top:0;
+        display: block;
+        /* grid-area: header; */
+        margin-bottom: 120px;
+        height: 100px;
+        width: 100%;
+        background-color: rgba(2,77,115, 0.9);
+        border-bottom: 2px solid #006B99;
+    }
+        header ul li {
+            padding-left: 50px;
+            padding-top: 10px;
+        }
+            header ul li a {
+                display: inline-block;
+                text-decoration: none;
+                color:rgba(2,183,189);
+                padding-top: 10px;
+                padding-left: 15px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .chosen {
+                color: #E1F7E6;
+
+            }
     #wrapper {
         border: 1px solid red;
         /* position: relative; */
         min-height: 100vh;
+        margin-top: 120px;
         display: grid;
         grid-template-columns: 5fr 2fr;
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: 1fr auto;
         grid-gap: 20px;
         grid-template-areas:
-            "header header"
             "article aside"
             "footer footer";
     }
 
-        header {
-            grid-area: header;
-            margin-bottom: 20px;
-            height: 100px;
-            width: 100%;
-            background-color: rgba(2,77,115, 0.5);
-            border-bottom: 2px solid #006B99;
-        }
-            header ul li {
-                padding-left: 50px;
-                padding-top: 10px;
-            }
-                header ul li a {
-                    display: inline-block;
-                    text-decoration: none;
-                    color:rgba(2,183,189);
-                    padding-top: 10px;
-                    padding-left: 15px;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-                .chosen {
-                    color: #E1F7E6;
 
-                }
         article {
             grid-area: article;
             display: grid;
