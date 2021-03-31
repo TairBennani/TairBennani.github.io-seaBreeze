@@ -1,48 +1,18 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body {
-
-
     background-image: url(../images/tropic.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
     font: 22px Verdana;
 }
-    header {
-        position: fixed;
-        margin-bottom: 150px;
-        /* top:0; */
-        display: block;
-        grid-area: header;
-        /* margin-bottom: 120px; */
-        height: 100px;
-        width: 100%;
-        background-color: rgba(2,77,115, 0.9);
-        border-bottom: 2px solid #006B99;
-    }
-        header ul li {
-            padding-left: 50px;
-            padding-top: 10px;
-        }
-            header ul li a {
-                display: inline-block;
-                text-decoration: none;
-                color:rgba(2,183,189);
-                padding-top: 10px;
-                padding-left: 15px;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-            .chosen {
-                color: #E1F7E6;
 
-            }
     #wrapper {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         position: relative; /* никак визуально не сказывается, скорее поставил как по урокам */
         min-height: 100vh;
         /* margin-top: 150px; */
@@ -55,18 +25,56 @@ body {
             "article aside"
             "footer footer";
     }
+        header {
+            position: fixed;
+            /* margin-bottom: 150px; */
+            /* top:0; */
+            display: block;
+            grid-area: header;
+            /* margin-bottom: 120px; */
+            height: 100px;
+            width: 100%;
+            background-color: rgba(2,77,115, 0.9);
+            /* background: linear-gradient(115deg, rgba(2,77,115,0.8), rgba(225,247,230,0.7)); */
+            border-bottom: 2px solid #006B99;
+        }
+            header ul li {
+                padding-left: 50px;
+                padding-top: 10px;
+            }
+                header ul li a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color:rgba(2,183,189);
+                    padding-top: 10px;
+                    padding-left: 15px;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+                .chosen {
+                    color: #E1F7E6;
+                }
 
 
         article {
             grid-area: article;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            margin-top: 100px;
+            margin-top: 80px;
+
+            /* border: 2px solid #024D73; */
+            /* border-radius: 5px; */
+            background: rgba(225,247,230, 0.2);
+            background: linear-gradient(270deg, rgba(2,77,115,0.7), rgba(225,247,230,0.4));
         }
             article div  {
                 border: none;
                 padding: 10px;
             }
+                article div h2 {
+                    text-align: center;
+                }
             .responsive  {
                 width: 100%;
                 height: auto;
@@ -81,10 +89,12 @@ body {
             }
         aside {
             grid-area: aside;
-            border: 2px solid #024D73;
+            /* border: 2px solid #024D73; */
             border-radius: 5px;
             background: rgba(2,77,115, 0.5);
-            margin-top: 100px;
+            margin-top: 150px;
+            /* margin-top: 80px; */
+            margin-right: 70px;
 
             /* width: 100%; */  /* закрывает рамку справа при вкл width */
 
@@ -113,38 +123,43 @@ body {
             display: flex;
             align-items: flex-end;
             justify-content: center;
-
             background-color: rgba(168,230,218, 0.7);
             /* display: grid; */
             height: 100px;
-            padding: 10px;
             font: 14px Georgia;
         }
+            footer p {
+                max-width: 75%;
+            }
 
-        @media (max-width: 965px) {
-            #wrapper {
-                display: grid;
-                grid-template-columns: 4fr 2fr;
-                grid-gap: 20px;
-                grid-template-areas:
-                    "header header"
-                    "article article"
-                    "aside aside"
-                    "footer footer";
-            }
-            header ul li {
-                padding:15px;
-            }
-            article {
-                grid-template-columns: 1fr;
-            }
-                article div {
-                    padding: 0;
-                }
-                    article div p {
-                        padding: 10px;
-                    }
-            aside {
-                margin-top: 0;
-            }
+    @media (max-width: 965px) {
+        #wrapper {
+            display: grid;
+            grid-template-columns: 4fr 2fr;
+            grid-gap: 20px;
+            grid-template-areas:
+                "header header"
+                "article article"
+                "aside aside"
+                "footer footer";
         }
+        header ul li {
+            padding:15px;
+        }
+        article {
+            grid-template-columns: 1fr;
+        }
+            article div {
+                padding: 0;
+            }
+                article div p {
+                    padding: 10px;
+                }
+        aside {
+            margin-top: 0;
+            margin-right:0;
+        }
+        footer p {
+            max-width:99%;
+        }
+    }
