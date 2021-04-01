@@ -49,7 +49,7 @@ body {
                     padding-top: 10px;
                     padding-left: 15px;
                 }
-                a:hover {
+                header ul li a:hover {
                     text-decoration: underline;
                 }
                 .chosen {
@@ -79,6 +79,11 @@ body {
                 width: 100%;
                 height: auto;
             }
+            article audio {
+                /* margin-bottom: 186px; */
+                /* vertical-align: top;  */
+                align-self: flex-start;
+            }
             article video, iframe {
                 /* display: inline-block;
                 border: 2px solid #024D73;
@@ -97,25 +102,21 @@ body {
             margin-right: 70px;
 
             /* width: 100%; */  /* закрывает рамку справа при вкл width */
-
         }
             aside ul{
                 padding: 15px;
+                text-align: center;
             }
             aside ul li a {
-                display: block;
+                display: inline-block; /*хороший вариант для ссылок */
                 text-align: center;
                 text-decoration: none;
                 color:#A8E6DA;
                 padding: 11px;
             }
-
-
-            aside div {
-
-
+            aside ul li a:hover {
+                color: #024D73;
             }
-
 
         footer {
             grid-area: footer;
