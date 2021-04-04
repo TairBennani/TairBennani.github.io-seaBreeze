@@ -26,6 +26,7 @@ body {
             "footer footer";
     }
         header {
+            z-index: 10;
             position: fixed;
             /* margin-bottom: 150px; */
             /* top:0; */
@@ -103,6 +104,7 @@ body {
                 border: 1px solid red;
             }
                 .for_animation {
+                    z-index: 100;
                     position: absolute;
                     width: 250px;
                     /* width: 50%; */
