@@ -58,6 +58,7 @@ body {
 
 
         article {
+            position: relative;
             grid-area: article;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -96,18 +97,24 @@ body {
                 margin-top: 15px;
                 margin-left: 20px; */
             }
-            article .for_animation {
+            .relative {
                 position: relative;
-                width: 50%;
-                background: red;
-                animation: mymove 8s infinite;
+                height: 250px;
+                border: 1px solid red;
             }
+                .for_animation {
+                    position: absolute;
+                    width: 250px;
+                    /* width: 50%; */
+                    background: red;
+                    animation: mymove 8s infinite;
+                }
             @keyframes mymove {
                 /* from {background-color: red;}
                 to {background-color: blue;} */
-                0% {background-color: red; left: 0; top: 0;}
-                50% {background-color: blue; left: 330px; top: 0}
-                100% {background-color: red; left: 0; top: 0;}
+                0% {background-color: red; left: 0%; top: 0%;}
+                50% {background-color: blue; left: 100%; top: 0%}
+                100% {background-color: red; left: 0%; top: 0%;}
             }
         aside {
             grid-area: aside;
