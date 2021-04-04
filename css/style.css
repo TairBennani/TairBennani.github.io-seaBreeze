@@ -96,6 +96,19 @@ body {
                 margin-top: 15px;
                 margin-left: 20px; */
             }
+            article .for_animation {
+                position: relative;
+                width: 50%;
+                background: red;
+                animation: mymove 8s infinite;
+            }
+            @keyframes mymove {
+                /* from {background-color: red;}
+                to {background-color: blue;} */
+                0% {background-color: red; left: 0; top: 0;}
+                50% {background-color: blue; left: 330px; top: 0}
+                100% {background-color: red; left: 0; top: 0;}
+            }
         aside {
             grid-area: aside;
             /* border: 2px solid #024D73; */
