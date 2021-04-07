@@ -59,15 +59,33 @@ body {
                 .burger {
                     width: 50px;
                     height: 50px;
+
                     cursor: pointer;
                     background: url(../images/list.svg) no-repeat center;
                     background-size: contain;
                     transition: .3s all linear;
                 }
+                .burger:hover {
+                    border-bottom: 2px solid red;
+                }
                 .burger_active {
                     background: url(../images/close.svg) no-repeat center;
                     background-size: contain;
                 }
+                /* .icon_bur {
+                    width: 100px;
+                    height: 80px;
+                    fill: purple;
+                }
+                .icon_bur:hover {
+                    cursor: pointer;
+                    fill: green;
+                }
+                .icon_bur_act {
+                    width: 100px;
+                    height: 80px;
+                    fill: black;
+                } */
 
 
         article {
