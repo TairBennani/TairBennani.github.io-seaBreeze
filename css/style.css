@@ -56,27 +56,7 @@ body {
                 .chosen {
                     color: #E1F7E6;
                 }
-                .burger {
-                    width: 40px;
-                    height: 40px;
-                    cursor: pointer;
-                    background: linear-gradient(to bottom, #000 20%, transparent 21%, transparent 40%,  #000 41%,  #000 60%,
-                        transparent 61%, transparent 80%,  #000 81%);
-                }
-                .burger:hover {
-                    background: linear-gradient(to bottom, #E1F7E6 20%, transparent 21%, transparent 40%,  #E1F7E6 41%,  #E1F7E6 60%,
-                        transparent 61%, transparent 80%,  #E1F7E6 81%);
-                }
-                .burger_active {
-                    /* background: url(../images/close.svg) no-repeat center;
-                    background-size: contain; */
-                    background: linear-gradient(45deg, transparent 45%, #000 46%, #000 55%, transparent 56%),
-                        linear-gradient(-45deg, transparent 45%, #000 46%, #000 55%, transparent 56%);
-                }
-                .burger_active:hover {
-                    background: linear-gradient(45deg, transparent 45%, #E1F7E6 46%, #E1F7E6 55%, transparent 56%),
-                        linear-gradient(-45deg, transparent 45%, #E1F7E6 46%, #E1F7E6 55%, transparent 56%);
-                }
+
 
         article {
             position: relative;
@@ -200,8 +180,34 @@ body {
                 "aside aside"
                 "footer footer";
         }
+        .burger {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background: linear-gradient(to bottom, #000 20%, transparent 21%, transparent 40%,  #000 41%,  #000 60%,
+                transparent 61%, transparent 80%,  #000 81%);
+        }
+        .burger:hover {
+            background: linear-gradient(to bottom, #E1F7E6 20%, transparent 21%, transparent 40%,  #E1F7E6 41%,  #E1F7E6 60%,
+                transparent 61%, transparent 80%,  #E1F7E6 81%);
+        }
+        .burger_active {
+            /* background: url(../images/close.svg) no-repeat center;
+            background-size: contain; */
+            background: linear-gradient(45deg, transparent 45%, #000 46%, #000 55%, transparent 56%),
+                linear-gradient(-45deg, transparent 45%, #000 46%, #000 55%, transparent 56%);
+        }
+        .burger_active:hover {
+            background: linear-gradient(45deg, transparent 45%, #E1F7E6 46%, #E1F7E6 55%, transparent 56%),
+                linear-gradient(-45deg, transparent 45%, #E1F7E6 46%, #E1F7E6 55%, transparent 56%);
+        }
+
         header ul li {
             padding:15px;
+        }
+        .menu a {
+            display: none;
         }
         article {
             grid-template-columns: 1fr;
