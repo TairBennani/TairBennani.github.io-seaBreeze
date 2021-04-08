@@ -53,6 +53,9 @@ body {
                 header ul li a:hover {
                     text-decoration: underline;
                 }
+                .forNav {
+                    visibility: visible;
+                }
                 .chosen {
                     color: #E1F7E6;
                 }

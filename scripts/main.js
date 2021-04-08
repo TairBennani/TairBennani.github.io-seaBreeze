@@ -24,18 +24,17 @@ $(document).ready(function(){
     //
     // $('.burger').click(function(){
     //    $('.menu').addClass('menu');
-    // });
+    // });s
+
+        // if(window.matchMedia('(max-width: 965px)').matches){
+        //
+        // };
 
     $('.burger').toggle(function(){
         $('.forNav').css({'visibility' : 'visible'});
     },function(){
         $('.forNav').css({'visibility' : 'hidden'});
     });
-
-
-
-
-
 
 
 
