@@ -181,6 +181,8 @@ body {
                 "footer footer";
         }
         .burger {
+            margin: 20px;
+
             display: inline-block;
             width: 40px;
             height: 40px;
@@ -202,12 +204,20 @@ body {
             background: linear-gradient(45deg, transparent 45%, #E1F7E6 46%, #E1F7E6 55%, transparent 56%),
                 linear-gradient(-45deg, transparent 45%, #E1F7E6 46%, #E1F7E6 55%, transparent 56%);
         }
-
+        header {
+            height: 80px;
+        }
         header ul li {
             padding:15px;
         }
-        .menu a {
-            display: none;
+        .header_links {
+            display:block;
+            font-size: 26px;
+            padding: 10px;
+        }
+        .forNav {
+            visibility: hidden;
+            background: rgba(2,77,115, 0.9)
         }
         article {
             grid-template-columns: 1fr;
