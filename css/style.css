@@ -160,12 +160,13 @@ body {
         footer {
             grid-area: footer;
             /* position: absolute; */
+            padding-top: 30px;
             display: flex;
             align-items: flex-end;
             justify-content: center;
             background-color: rgba(168,230,218, 0.7);
             /* display: grid; */
-            height: 100px;
+            height: 100%;
             font: 15px Georgia;
         }
             footer p {
