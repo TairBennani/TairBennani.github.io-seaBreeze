@@ -166,83 +166,99 @@ body {
             background-color: rgba(168,230,218, 0.7);
             /* display: grid; */
             height: 100px;
-            font: 14px Georgia;
+            font: 15px Georgia;
         }
             footer p {
+                display: flex
                 max-width: 75%;
             }
-
-    @media (max-width: 965px) {
-        #wrapper {
-            display: grid;
-            grid-template-columns: 4fr 2fr;
-            grid-gap: 20px;
-            grid-template-areas:
-                "header header"
-                "article article"
-                "aside aside"
-                "footer footer";
-        }
-        .burger {
-            margin: 20px;
-
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            background: linear-gradient(to bottom, #E1F7E6 20%, transparent 21%, transparent 40%,  #E1F7E6 41%,  #E1F7E6 60%,
-                transparent 61%, transparent 80%,  #E1F7E6 81%);
-        }
-        .burger:hover {
-            background: linear-gradient(to bottom, white 20%, transparent 21%, transparent 40%,  white 41%,  white 60%,
-                transparent 61%, transparent 80%,  white 81%);
-        }
-        .burger_active {
-            /* background: url(../images/close.svg) no-repeat center;
-            background-size: contain; */
-            background: linear-gradient(45deg, transparent 45%, #E1F7E6 46%, #E1F7E6 55%, transparent 56%),
-                linear-gradient(-45deg, transparent 45%, #E1F7E6 46%, #E1F7E6 55%, transparent 56%);
-        }
-        .burger_active:hover {
-            background: linear-gradient(45deg, transparent 45%, white 46%, white 55%, transparent 56%),
-                linear-gradient(-45deg, transparent 45%, white 46%, white 55%, transparent 56%);
-        }
-        header {
-            height: 80px;
-        }
-        header ul li {
-            padding:15px;
-        }
-        .header_links {
-            display:block;
-            font-size: 26px;
-            padding: 10px;
-        }
-        .forNav {
-            visibility: hidden;
-            background: rgba(2,77,115, 0.9)
-        }
-        article {
-            grid-template-columns: 1fr;
-        }
-            article div {
-                padding: 0;
+            footer a {
+                display: inline-block;
+                padding-left: 14px;
             }
-                article div p {
-                    padding: 10px;
-                }
-        aside {
-            margin-top: 0;
-            margin-right:0;
-        }
-        footer p {
-            max-width:99%;
-        }
+            .icon_vk {
+                display: inline-block;
+                fill: #1E88E5;
+                padding-left: 0px;
+                width: 40px;
+                height: 40px;
+            }
+            .icon_vk:hover {
+                fill: #05507A;
+            }
+
+@media (max-width: 965px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+        grid-gap: 20px;
+        grid-template-areas:
+            "header header"
+            "article article"
+            "aside aside"
+            "footer footer";
     }
-    @media(min-width: 1921px) {
-        #wrapper {
-            color: white;
-            padding-left: 250px;
-            width: 75%;
-        }
+    .burger {
+        margin: 20px;
+
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background: linear-gradient(to bottom, #E1F7E6 20%, transparent 21%, transparent 40%,  #E1F7E6 41%,  #E1F7E6 60%,
+            transparent 61%, transparent 80%,  #E1F7E6 81%);
     }
+    .burger:hover {
+        background: linear-gradient(to bottom, white 20%, transparent 21%, transparent 40%,  white 41%,  white 60%,
+            transparent 61%, transparent 80%,  white 81%);
+    }
+    .burger_active {
+        /* background: url(../images/close.svg) no-repeat center;
+        background-size: contain; */
+        background: linear-gradient(45deg, transparent 45%, #E1F7E6 46%, #E1F7E6 55%, transparent 56%),
+            linear-gradient(-45deg, transparent 45%, #E1F7E6 46%, #E1F7E6 55%, transparent 56%);
+    }
+    .burger_active:hover {
+        background: linear-gradient(45deg, transparent 45%, white 46%, white 55%, transparent 56%),
+            linear-gradient(-45deg, transparent 45%, white 46%, white 55%, transparent 56%);
+    }
+    header {
+        height: 80px;
+    }
+    header ul li {
+        padding:15px;
+    }
+    .header_links {
+        display:block;
+        font-size: 26px;
+        padding: 10px;
+    }
+    .forNav {
+        visibility: hidden;
+        background: rgba(2,77,115, 0.9)
+    }
+    article {
+        grid-template-columns: 1fr;
+    }
+        article div {
+            padding: 0;
+        }
+            article div p {
+                padding: 10px;
+            }
+    aside {
+        margin-top: 0;
+        margin-right:0;
+    }
+    footer p {
+        padding: 5px;
+        max-width:98%;
+    }
+}
+@media(min-width: 1921px) {
+    #wrapper {
+        color: white;
+        padding-left: 250px;
+        width: 75%;
+    }
+}
