@@ -101,6 +101,9 @@ body {
                 margin-top: 15px;
                 margin-left: 20px; */
             }
+            #bigform {
+                padding: 20px;
+            }
             .relative {
                 position: relative;
                 height: 250px;
