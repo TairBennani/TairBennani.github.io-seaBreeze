@@ -31,16 +31,16 @@
                     <div id="bigform">
                         <fieldset>
                             <legend>Давайте разбираться</legend>
-                                <p>Нужны ли прибамбасы?</p>
+                                <p class="question">Нужны ли прибамбасы?</p>
                                 <div class="prib">
-                                    <input type="checkbox" id="zont">
                                     <label for="zont">Зонтик</label>
-                                    <input type="checkbox" id="krem">
+                                    <input type="checkbox" id="zont">
                                     <label for="krem">Крем для загара</label>
-                                    <input type="checkbox" id="polot">
+                                    <input type="checkbox" id="krem">
                                     <label for="polot">Полотенце</label>
+                                    <input type="checkbox" id="polot">
                                 </div>
-                                <p>Нужна ли страховка?</p>
+                                <p class="question">Нужна ли страховка?</p>
                                 <div class="strah">
                                     <input type="radio" value="yes" name="inch" id="str_yes">
                                     <label for="str_yes">Да</label>
@@ -48,7 +48,7 @@
                                     <label for="str_no">Нет</label>
                                 </div>
                                 <div class="kuda">
-                                    <p>Какую страну предпочитаете?</p>
+                                    <p class="question">Какую страну предпочитаете?</p>
                                     <span>Страна:</span>
                                     <select name="country" id="countrySelect" size="1">
                                         <option value="1">Болгария</option>
@@ -56,7 +56,7 @@
                                         <option value="3">Греция</option>
                                         <option value="4">Италия</option>
                                     </select>
-                                    <p>Сколько дней планируете отдыхать?</p>
+                                    <p class="question">Сколько дней планируете отдыхать?</p>
                                     <span>Кол-во дней:</span>
                                     <select name="days" id="daysSelect">
                                         <option value="3">3</option>
@@ -86,10 +86,11 @@
                                         <option value="27">27</option>
                                         <option value="28">28</option>
                                     </select>
-                                    <p>Укажите ваш E-mail</p>
+                                    <p class="question">Укажите ваш E-mail</p>
                                     <input type="text" id="e-mail" value="Пример: you@site.ru">
-                                    <p>Ваши пожелания:</p>
-                                    <textarea id="wishes" rows="4" cols="30"></textarea>
+                                    <p class="question">Ваши пожелания:</p>
+                                    <textarea id="wishes"></textarea>
+                                </br><input type="submit" value="Отправить заявку" id="button">
                                 </div>
                         </fieldset>
                     </div>
@@ -99,8 +100,8 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>Комбо</th>
-                                <th>Цена</th>
+                                <th class="top_table">Комбо</th>
+                                <th class="top_table">Цена</th>
                             </tr>
                         </thead>
                         <tbody>

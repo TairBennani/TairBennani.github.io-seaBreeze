@@ -101,9 +101,49 @@ body {
                 margin-top: 15px;
                 margin-left: 20px; */
             }
+                    /* Форма */
+            legend {
+                font: 26px Times;
+            }
+            fieldset {
+                border: none;
+                /* background-color: rgba(225,247,230, 0.5); */
+            }
+            fieldset p {
+                font: 25px Georgia;
+                font-weight: 600;
+                padding-top: 30px;
+            }
             #bigform {
                 padding: 20px;
             }
+            .question {
+                padding-top: 20px;
+            }
+            .price h3 {
+                text-align: center;
+                font: 28px Times;
+                border-bottom: 2px solid rgba(2,133,168, 0.5);
+            }
+            .top_table {
+                font-style: italic;
+                padding-top: 15px;
+            }
+            #e-mail {
+                width: 270px;
+                height: 35px;
+                font-size: 24px;
+            }
+            #wishes {
+                width: 270px;
+                height: 100px;
+                font: 20px Georgia;
+                font-style: italic;
+            }
+            #button {
+                
+            }
+                    /*конец  Формы */
             .relative {
                 position: relative;
                 height: 250px;
