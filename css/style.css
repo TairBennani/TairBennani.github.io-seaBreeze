@@ -59,8 +59,6 @@ body {
                 .chosen {
                     color: #E1F7E6;
                 }
-
-
         article {
             position: relative;
             grid-area: article;
@@ -133,6 +131,10 @@ body {
                 width: 270px;
                 height: 35px;
                 font-size: 24px;
+                cursor: text;
+            }
+            #e-mail:focus {
+                width: 350px;
             }
             #wishes {
                 width: 270px;
@@ -140,8 +142,20 @@ body {
                 font: 20px Georgia;
                 font-style: italic;
             }
+            #wishes:focus {
+                width: 350px;
+            }
             #button {
-                
+                width: 160px;
+                font-size: 16px;
+            }
+            #button:hover {
+                border: 1px solid rgba(2,133,168, 0.5);
+                background-color: rgba(2,133,168, 0.5);
+                color: white;
+            }
+            label, input, select {
+                cursor: pointer;
             }
                     /*конец  Формы */
             .relative {

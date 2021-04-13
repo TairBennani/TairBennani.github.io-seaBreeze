@@ -36,6 +36,30 @@ $(document).ready(function(){
         $('.forNav').css({'visibility' : 'hidden'});
     });
 
+    $('#button').click(function(){
+        alert("Не подключён POST и php");
+    });
+
+    $('#e-mail').focus(function() {
+        if ($(this).val() == "Пример: you@site.ru") {
+            $(this).val("");
+        }
+    });
+
+    $('#e-mail').blur(function() {
+        if ($(this).val() == "") {
+            $(this).val("Пример: you@site.ru");
+        }
+
+    });
+
+    // $('#e-mail').mouseout(function() {
+    //    $(this).css({
+    //        'backgroundColor' : 'white',
+    //        'color' : 'black'
+    //    });
+    // });
+
 
 
 
