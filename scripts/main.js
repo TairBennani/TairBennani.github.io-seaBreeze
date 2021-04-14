@@ -9,7 +9,6 @@ $(document).ready(function(){
     // }());
 
     // document.write("test");
-
     $('.burger').toggle(function(){
         $(this).addClass('burger_active');
     },function(){
@@ -32,9 +31,9 @@ $(document).ready(function(){
         // };
 
     $('.burger').toggle(function(){
-        $('.forNav_2').css({'visibility' : 'visible'});
+        $('.forNav').css({'visibility' : 'visible'});
     },function(){
-        $('.forNav_2').css({'visibility' : 'hidden'});
+        $('.forNav').css({'visibility' : 'hidden'});
     });
 
     $('#button').click(function(){

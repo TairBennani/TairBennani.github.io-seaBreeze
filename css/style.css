@@ -56,13 +56,9 @@ body {
                 .forNav {
                     visibility: visible;
                 }
-                .forNav_2{
-                    visibility: hidden;
-                }
                 .chosen {
                     color: #E1F7E6;
                 }
-
         article {
             position: relative;
             grid-area: article;
@@ -299,10 +295,6 @@ body {
         padding: 10px;
     }
     .forNav {
-        visibility: hidden;
-        background: rgba(2,77,115, 0.9)
-    }
-    .forNav_2 {
         visibility: hidden;
         background: rgba(2,77,115, 0.9)
     }
