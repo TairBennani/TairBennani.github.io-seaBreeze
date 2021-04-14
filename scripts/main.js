@@ -46,11 +46,18 @@ $(document).ready(function(){
         }
     });
 
+    var regV = /[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/;
     $('#e-mail').blur(function() {
-        if ($(this).val() == "") {
-            $(this).val("Пример: you@site.ru");
-        }
 
+        if ($(this).val() == "") {
+            $(this).val("Пример: you@site.ru").css('border','2px solid rgba(2,133,168, 0.6)');
+        }
+        else if( ($(this).val() ).search(regV) == -1) {
+            $(this).css('border','2px solid red');
+        }
+        else {
+            $(this).css('border','2px solid green');
+        }
     });
 
     // $('#e-mail').mouseout(function() {
