@@ -60,12 +60,19 @@ $(document).ready(function(){
         }
     });
 
-    // $('#e-mail').mouseout(function() {
-    //    $(this).css({
-    //        'backgroundColor' : 'white',
-    //        'color' : 'black'
-    //    });
-    // });
+
+
+    $('#page_4').hover(function() {
+        $('.megaMenu_1').css('visibility', 'visible');
+    });
+    $('article').hover(function() {
+        $('.megaMenu_1').css('visibility', 'hidden');
+    });
+    $('.forNav a:not(.forNav #page_4)').hover(function() {
+        $('.megaMenu_1').css('visibility', 'hidden');
+    });
+
+
 
 
 

@@ -10,7 +10,6 @@ body {
     background-size: cover;
     font: 22px Verdana;
 }
-
     #wrapper {
         /* border: 1px solid red; */
         position: relative; /* никак визуально не сказывается, скорее поставил как по урокам */
@@ -39,7 +38,7 @@ body {
             /* background: linear-gradient(115deg, rgba(2,77,115,0.8), rgba(225,247,230,0.7)); */
             border-bottom: 2px solid #006B99;
         }
-            header ul li {
+            header .menu {
                 padding-left: 50px;
                 padding-top: 10px;
             }
@@ -59,6 +58,23 @@ body {
                 .chosen {
                     color: #E1F7E6;
                 }
+            .megaMenu_1 {
+                display: inline-block;
+                width: auto;;
+                height: auto;
+                text-align: center;
+                margin-top: 10px;
+                margin-left: 410px;
+                padding-bottom: 10px;
+                border: 3px solid rgba(2,77,115, 0.5);
+                background: rgba(2,183,189, 0.7);
+                text-align: left;
+                visibility: hidden;
+            }
+                .megaMenu_1 a {
+                    color: black;
+                }
+
         article {
             position: relative;
             grid-area: article;
@@ -296,7 +312,7 @@ body {
     }
     .forNav {
         visibility: hidden;
-        background: rgba(2,77,115, 0.9)
+        background: rgba(2,77,115, 0.9);
     }
     article {
         grid-template-columns: 1fr;
