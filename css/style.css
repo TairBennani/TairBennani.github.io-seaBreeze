@@ -52,6 +52,9 @@ body {
                 header ul li a:hover {
                     text-decoration: underline;
                 }
+                header #page_4 {
+
+                }
                 .forNav {
                     visibility: visible;
                 }
@@ -89,6 +92,25 @@ body {
             background: rgba(225,247,230, 0.2);
             background: linear-gradient(270deg, rgba(2,77,115,0.7), rgba(225,247,230,0.4));
         }
+            .megaMenu_1_forPage_4 {
+                display: inline-block;
+                width: auto;;
+                height: auto;
+                text-align: center;
+
+                border: 3px solid rgba(2,77,115, 0.5);
+                border-radius: 5px;
+                background: rgba(2,183,189, 0.3);
+                text-align: left;
+            }
+                article .megaMenu_1_forPage_4 a {
+                    text-decoration: none;
+                    color: black;
+                    padding: 10px;
+                }
+                article .megaMenu_1_forPage_4 a:hover {
+                    color: white;
+                }
             article div  {
                 border: none;
             }
@@ -302,18 +324,21 @@ body {
     header {
         height: 80px;
     }
-    header ul li {
-        padding:15px;
-    }
-    .header_links {
-        display:block;
-        font-size: 26px;
-        padding: 10px;
-    }
-    .forNav {
-        visibility: hidden;
-        background: rgba(2,77,115, 0.9);
-    }
+        header ul li {
+            padding:15px;
+        }
+        .header_links {
+            display:block;
+            font-size: 26px;
+            padding: 10px;
+        }
+        .forNav {
+            visibility: hidden;
+            background: rgba(2,77,115, 0.9);
+        }
+        .megaMenu_1 {
+            margin: 0;
+        }
     article {
         grid-template-columns: 1fr;
     }
