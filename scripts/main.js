@@ -61,7 +61,6 @@ $(document).ready(function(){
     });
 
 
-
     $('#page_4').hover(function() {
         $('.megaMenu_1').css('visibility', 'visible');
     });
@@ -73,9 +72,12 @@ $(document).ready(function(){
     });
 
 
-
-
-
+    $('.sub_img').mouseover(function(){
+        $(this).fadeTo(200, 0.8);
+    });
+    $('.sub_img').mouseout(function(){
+        $(this).fadeTo(200, 1);
+    });
 
 
 
