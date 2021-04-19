@@ -122,25 +122,7 @@ body {
             background: rgba(225,247,230, 0.2);
             background: linear-gradient(270deg, rgba(2,77,115,0.7), rgba(225,247,230,0.4));
         }
-            .megaMenu_1_forPage_4 {
-                display: inline-block;
-                width: auto;;
-                height: auto;
-                text-align: center;
 
-                border: 3px solid rgba(2,77,115, 0.5);
-                border-radius: 5px;
-                background: rgba(2,183,189, 0.3);
-                text-align: left;
-            }
-                article .megaMenu_1_forPage_4 a {
-                    text-decoration: none;
-                    color: black;
-                    padding: 10px;
-                }
-                article .megaMenu_1_forPage_4 a:hover {
-                    color: white;
-                }
             article div  {
                 border: none;
             }
@@ -159,15 +141,11 @@ body {
                 /* vertical-align: top;  */
                 align-self: flex-start;
             }
-            article video, iframe {
-                /* display: inline-block;
-                border: 2px solid #024D73;
-                border-radius: 5px;
 
-                margin-top: 15px;
-                margin-left: 20px; */
-            }
-                    /* Форма */
+
+                                    /* Форма */
+
+
             legend {
                 font: 26px Times;
             }
@@ -228,7 +206,9 @@ body {
             label, input, select {
                 cursor: pointer;
             }
-                    /*конец  Формы */
+
+                                            /*конец  Формы */
+
             .relative {
                 position: relative;
                 height: 250px;
