@@ -140,9 +140,9 @@ body {
             background: rgba(225,247,230, 0.2);
             background: linear-gradient(270deg, rgba(2,77,115,0.7), rgba(225,247,230,0.4));
         }
-            .article_for_page4 {
+            /* .article_for_page4 {
                 grid-template-columns: 1fr;
-            }
+            } */
 
             article div  {
                 border: none;
