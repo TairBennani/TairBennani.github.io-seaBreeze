@@ -101,7 +101,8 @@ body {
                 visibility: hidden;
             }
             .megaMenu_1ForPage_4 {
-                display: inline-block;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 width: auto;;
                 height: auto;
                 text-align: center;
