@@ -102,7 +102,7 @@ body {
             }
             .megaMenu_1ForPage_4 {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
                 grid-gap: 20px;
                 width: auto;;
                 height: auto;
@@ -119,8 +119,9 @@ body {
                     display: inline-block;
                     vertical-align: top;
                 }
-                    .subMenuBlock {
+                    .subMenuBlock li {
                         display: block;
+                        word-wrap: break-word;
                     }
                 .megaMenu_1 a, .megaMenu_1ForPage_4 a {
                     color: black;
@@ -140,10 +141,13 @@ body {
             background: rgba(225,247,230, 0.2);
             background: linear-gradient(270deg, rgba(2,77,115,0.7), rgba(225,247,230,0.4));
         }
-            /* .article_for_page4 {
+            .article_for_page4 {
                 grid-template-columns: 1fr;
-            } */
-
+            }
+            #test99::after {
+                content:"\2663";
+                color: darkgreen;
+            }
             article div  {
                 border: none;
             }
