@@ -88,9 +88,8 @@ body {
                     color: #E1F7E6;
                 }
             .megaMenu_1 {
-
-
-                display: inline-block;
+                display: block;
+                float: left;
                 width: auto;;
                 height: auto;
                 text-align: center;
