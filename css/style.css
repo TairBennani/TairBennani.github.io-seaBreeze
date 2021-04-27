@@ -89,8 +89,8 @@ body {
                 }
             .megaMenu_1 {
 
-                
-                display: block;
+
+                display: inline-block;
                 width: auto;;
                 height: auto;
                 text-align: center;
