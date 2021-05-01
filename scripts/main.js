@@ -15,7 +15,7 @@ $(document).ready(function(){
         $(this).removeClass('burger_active');
     });
 
-    $("#test").text("I've changed");
+    $("#test").text("I've changed by JQuerry");
 
 
     // $('.burger').click(function(){
